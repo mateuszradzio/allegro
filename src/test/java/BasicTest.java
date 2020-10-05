@@ -7,7 +7,7 @@ import pl.allegroREST.client.auth.TokenProvider;
 import pl.allegroREST.config.Config;
 import pl.allegroREST.config.ConfigReader;
 
-public class BasicTests {
+public class BasicTest {
 
     protected AllegroApiClient allegroApiClient = new AllegroApiClient("https://api.allegro.pl");
     protected DataProvider provider = DataProvider.getInstance();

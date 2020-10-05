@@ -1,0 +1,58 @@
+{
+  "parameters": [
+    {
+      "id": "11323",
+      "name": "Stan",
+      "type": "dictionary",
+      "required": false,
+      "requiredForProduct": false,
+      "options": {
+        "variantsAllowed": false,
+        "variantsEqual": true,
+        "describesProduct": false,
+        "customValuesEnabled": false
+      }
+    },
+    {
+      "id": "17448",
+      "name": "Waga (z opakowaniem)",
+      "type": "float",
+      "required": false,
+      "requiredForProduct": false,
+      "unit": "kg",
+      "options": {
+        "variantsAllowed": false,
+        "variantsEqual": false,
+        "describesProduct": false,
+        "customValuesEnabled": false
+      }
+    },
+    {
+      "id": "129369",
+      "name": "Marka",
+      "type": "dictionary",
+      "required": false,
+      "requiredForProduct": false,
+      "options": {
+        "variantsAllowed": false,
+        "variantsEqual": true,
+        "ambiguousValueId": "129369_289",
+        "describesProduct": true,
+        "customValuesEnabled": true
+      }
+    },
+    {
+      "id": "225693",
+      "name": "EAN",
+      "type": "string",
+      "required": false,
+      "requiredForProduct": false,
+      "options": {
+        "variantsAllowed": false,
+        "variantsEqual": false,
+        "describesProduct": true,
+        "customValuesEnabled": false
+      }
+    }
+  ]
+}

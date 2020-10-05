@@ -1215,7 +1215,7 @@ paths:
             application/vnd.allegro.public.v1+json:
               schema:
                 $ref: '#/components/schemas/ErrorsHolder'
-  '/sale/loyalty/promotions/{promotionId}':
+  /sale/loyalty/promotions/{promotionId}:
     get:
       tags:
         - Rebates and promotions
@@ -1253,6 +1253,13 @@ paths:
         Use this resource to update a promotion by its unique id.
         Only wholesale price lists can be updated. Benefit type cannot be changed.
       operationId: updatePromotionUsingPUT
+      parameters:
+        - name: promotionId
+          in: path
+          description: Promotion identifier.
+          required: true
+          schema:
+            type: string
       responses:
         '200':
           description: Successfully updated the requested promotion

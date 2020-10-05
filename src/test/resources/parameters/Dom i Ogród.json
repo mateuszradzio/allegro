@@ -1,0 +1,30 @@
+{
+  "parameters": [
+    {
+      "id": "11323",
+      "name": "Stan",
+      "type": "dictionary",
+      "required": false,
+      "requiredForProduct": false,
+      "options": {
+        "variantsAllowed": false,
+        "variantsEqual": true,
+        "describesProduct": false,
+        "customValuesEnabled": false
+      }
+    },
+    {
+      "id": "225693",
+      "name": "EAN",
+      "type": "string",
+      "required": false,
+      "requiredForProduct": false,
+      "options": {
+        "variantsAllowed": false,
+        "variantsEqual": false,
+        "describesProduct": true,
+        "customValuesEnabled": false
+      }
+    }
+  ]
+}

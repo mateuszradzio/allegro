@@ -1,0 +1,184 @@
+[
+  {
+    "id": "5",
+    "leaf": false,
+    "name": "Dom i Ogród",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "11763",
+    "leaf": false,
+    "name": "Dziecko",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "42540aec-367a-4e5e-b411-17c09b08e41f",
+    "leaf": false,
+    "name": "Elektronika",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": true,
+      "productCreationEnabled": true,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "4bd97d96-f0ff-46cb-a52c-2992bd972bb1",
+    "leaf": false,
+    "name": "Firma i usługi",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "a408e75a-cede-4587-8526-54e9be600d9f",
+    "leaf": false,
+    "name": "Kolekcje i sztuka",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": false
+    }
+  },
+  {
+    "id": "38d588fd-7e9c-4c42-a4ae-6831775eca45",
+    "leaf": false,
+    "name": "Kultura i rozrywka",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "ea5b98dd-4b6f-4bd0-8c80-22c2629132d0",
+    "leaf": false,
+    "name": "Moda",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": true,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "3",
+    "leaf": false,
+    "name": "Motoryzacja",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "20782",
+    "leaf": false,
+    "name": "Nieruchomości",
+    "options": {
+      "advertisement": true,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": false,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": false
+    }
+  },
+  {
+    "id": "3919",
+    "leaf": false,
+    "name": "Sport i turystyka",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "258832",
+    "leaf": false,
+    "name": "Supermarket",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "1429",
+    "leaf": false,
+    "name": "Uroda",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": true,
+      "customParametersEnabled": true
+    }
+  },
+  {
+    "id": "121882",
+    "leaf": false,
+    "name": "Zdrowie",
+    "options": {
+      "advertisement": false,
+      "advertisementPriceOptional": false,
+      "variantsByColorPatternAllowed": true,
+      "offersWithProductPublicationEnabled": false,
+      "productCreationEnabled": false,
+      "productEANRequired": false,
+      "customParametersEnabled": true
+    }
+  }
+]

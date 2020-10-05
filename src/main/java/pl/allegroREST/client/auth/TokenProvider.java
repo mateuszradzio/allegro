@@ -1,11 +1,11 @@
-package pl.allegroREST.client.utils;
+package pl.allegroREST.client.auth;
 
 import io.restassured.filter.log.ResponseLoggingFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.client.utils.URIBuilder;
-import pl.allegroREST.client.allegroClient.AllegroEndpoints;
-import pl.allegroREST.client.config.Config;
-import pl.allegroREST.client.config.ConfigReader;
+import pl.allegroREST.client.AllegroEndpoints;
+import pl.allegroREST.config.Config;
+import pl.allegroREST.config.ConfigReader;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -14,26 +14,34 @@ import java.net.URL;
 import static io.restassured.RestAssured.given;
 
 @Slf4j
-public class TokensUtils {
+public class TokenProvider {
 
+    /**
+     * Loads REST API Authorization properties and sets them as System properties
+     */
     static{
         Config.initAuthorizationProperties();
     }
 
-    private static String token = null;
-
+    /***
+     * Uses credetionals from configuration.properties to get token
+     * @return Bearer token as String
+     */
     public static String getToken() {
-        if(token == null){
-            var getToken = given().filter(new ResponseLoggingFilter())
-                    .auth()
-                    .basic(ConfigReader.getAuthorizationPropertyValue("client_id"), ConfigReader.getAuthorizationPropertyValue("client_secret"))
-                    .when()
-                    .get(createAuthURL());
-            token = getToken.jsonPath().getString("access_token");
-        }
+        final String token;
+        var getToken = given().filter(new ResponseLoggingFilter())
+                .auth()
+                .basic(ConfigReader.getAuthorizationPropertyValue("client_id"), ConfigReader.getAuthorizationPropertyValue("client_secret"))
+                .when()
+                .get(createAuthURL());
+        token = getToken.jsonPath().getString("access_token");
         return token;
     }
 
+    /***
+     * Creates an auth URL
+     * @return URL to token
+     */
     private static URL createAuthURL(){
         URL url;
         try{

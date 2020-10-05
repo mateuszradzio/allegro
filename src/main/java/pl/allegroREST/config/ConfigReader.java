@@ -1,4 +1,4 @@
-package pl.allegroREST.client.config;
+package pl.allegroREST.config;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,6 +13,7 @@ import java.util.Map;
 @Slf4j
 public class ConfigReader {
     private static final String AUTHORIZATION_PREFIX = "authorization.";
+    private static final String TEST_PREFIX = "test_properties.";
 
     private static final Map<String, String> configuration = createConfiguration();
 
@@ -29,6 +30,21 @@ public class ConfigReader {
             }
         }
         return authorizationProperties;
+    }
+
+    /**
+     * Loads test properties from configuration that starts with TEST_PREFIX
+     *
+     * @return Map with key-value pairs of test properties
+     */
+    public static Map<String, String> getTestProperties() {
+        Map<String, String> testProperties = new HashMap<>();
+        for (Map.Entry<String, String> entry : configuration.entrySet()) {
+            if (entry.getKey().startsWith(TEST_PREFIX)) {
+                testProperties.put(entry.getKey(), entry.getValue());
+            }
+        }
+        return testProperties;
     }
 
     /**
@@ -77,6 +93,15 @@ public class ConfigReader {
      */
     public static String getAuthorizationPropertyValue(String name) {
         return getValue(AUTHORIZATION_PREFIX + name);
+    }
 
+    /**
+     * Get value of property from configuration. Configuration need to bede initialized first!
+     *
+     * @param name of test property e.g. "update_data"
+     * @return String value of property
+     */
+    public static String getTestPropertyValue(String name) {
+        return getValue(TEST_PREFIX + name);
     }
 }

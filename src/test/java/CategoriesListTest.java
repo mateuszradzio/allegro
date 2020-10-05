@@ -1,7 +1,7 @@
 
 import org.testng.annotations.Test;
 
-public class CategoriesListTests extends BasicTests {
+public class CategoriesListTest extends BasicTest {
 
     @Test
     public void checkRandomCategoryTest() {
