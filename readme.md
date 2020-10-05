@@ -1,7 +1,7 @@
 # **Allegro REST API Test**
 Table of Contents
  1. [Introduction](#introduction)
- 2. [How to run](#How to run)
+ 2. [How to run](#how-to-run)
  
 ## Introduction
 Hello Everyone!
